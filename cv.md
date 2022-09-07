@@ -37,7 +37,7 @@ At the moment, my favorite development tool is Vue.js, I like how the framework 
 - Bootstrap
 - Axios
 - Webpack
-- Gulp.
+- Gulp
 
 ---
 
@@ -218,7 +218,7 @@ ul li:not(:last-child)::after {
 
 ### **September 2021 - to present: Frontend developer**, freelance.
 
-Learned the basics of **Javascript**, **Vue.js**, **Typescript**, **Git**.
+Learned the basics of Javascript, Vue.js, Typescript, Git.
 
 Honed my practice on simulators:
 
@@ -227,7 +227,7 @@ Honed my practice on simulators:
 - https://codepip.com/
 - https://www.codewars.com/users/ekatrif
 
-Made **6 pet projects**:
+Made 6 pet projects:
 
 1. Vote for the film of the week - https://github.com/ekatrif/films-rating
 2. Speaker time control - https://github.com/ekatrif/spiker-time-control
