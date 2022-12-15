@@ -4,6 +4,16 @@ body {background-color: #fff;
     font-weight: 400;
     font-size: 10px;
     line-height: 1.5;}
+h1 {
+font-family: 'Bellota Text';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 1.4;
+text-align: right;
+letter-spacing: 0.02em;
+color: #343434;
+}
 h2 {
     font-family: 'Lato';
     font-style: normal;
@@ -19,7 +29,11 @@ h2 {
     max-width:800px;
     margin:0 auto;
 }
-
+.container {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 /* Top navigation */
 .top-navigation {
     margin-top:20px;
@@ -237,4 +251,107 @@ letter-spacing: 0.075em;
     font-size: 9px;
     line-height: 1.5;
     color: rgba(52, 52, 52, 0.5);
+}
+
+/* Main */
+.main {
+    padding:0 14px 14px 14px;
+}
+.main__subtitles {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.main__subtitles h2 {
+    display:block;
+    text-align:center;
+    padding:2px;
+    width:50%;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.subtitles__speciality {
+    color: #FFFFFF;
+    background-color: #FFBFBF;;
+}
+.subtitles__contact {
+    color: 
+    #343434;
+    background: rgba(196, 196, 196, 0.3);
+}
+.main__contacts {
+    padding-top:18px;
+}
+.contacts__list {
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    list-style:none;
+    padding:0 0 0 10px;
+    margin:0;
+}
+.contacts__item {
+    width:calc(50% - 40px);
+    position:relative;
+    padding:0 0 20px 40px;
+}
+.contacts__item a {
+    text-decoration: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #231F20;
+}
+.contacts__item:nth-child(1):before {
+    position:absolute;
+    top:-8px;
+    left:0;
+    content:url("../images/svg/location.svg");
+}
+.contacts__item:nth-child(2):before {
+    position:absolute;
+    top:-8px;
+    left:0;
+    content:url("../images/svg/gmail.svg");
+}
+.contacts__item:nth-child(3):before {
+    position:absolute;
+    top:-8px;
+    left:0;
+    content:url("../images/svg/phone.svg");
+}
+.contacts__item:nth-child(4):before {
+    position:absolute;
+    top:-8px;
+    left:0;
+    content:url("../images/svg/github.svg");
+}
+.contacts__item:nth-child(5):before {
+    position:absolute;
+    top:-8px;
+    left:0;
+    width: 30px;
+    height:3px;
+    content:url("../images/svg/whatsapp.svg");
+}
+.contacts__item:nth-child(6):before {
+    position:absolute;
+    top:-8px;
+    left:0;
+    content:url("../images/svg/telegram.svg");
+}
+.contacts__item::after {
+    position: absolute;
+    display: block;
+    content: "";
+    top:22px;
+    left: 40px;
+    width: calc(100% - 60px);
+    border-bottom:1px solid #BBBDBF;
 }
