@@ -2,7 +2,7 @@ body {background-color: #fff;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 10px;
+    font-size: 12px;
     line-height: 1.5;}
 h1 {
 font-family: 'Bellota Text';
@@ -18,7 +18,7 @@ h2 {
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 16px;
     line-height:1.5;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -70,8 +70,7 @@ transition: color 0.3s linear;
 
 /* Sidebar */
 .sidebar {   
-    width: 258px;
-
+    width: 400px;
 }
 
 /* About me */
@@ -113,7 +112,7 @@ transition: color 0.3s linear;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -134,7 +133,7 @@ color:#fff;
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 400;
-font-size: 10px;
+font-size: 12px;
 line-height: 1.4;
 letter-spacing: 0.075em;
 }
@@ -191,7 +190,7 @@ letter-spacing: 0.075em;
 }
 .skills__item::before {
     position:absolute;
-    top:5px;
+    top:8px;
     left:0;
     content:"";
     width:7px;
@@ -239,7 +238,7 @@ letter-spacing: 0.075em;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.5;
     color: #343434;
 }
@@ -248,7 +247,7 @@ letter-spacing: 0.075em;
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
-    font-size: 9px;
+    font-size: 10px;
     line-height: 1.5;
     color: rgba(52, 52, 52, 0.5);
 }
@@ -283,6 +282,8 @@ letter-spacing: 0.075em;
     #343434;
     background: rgba(196, 196, 196, 0.3);
 }
+
+/* Contact */
 .main__contacts {
     padding-top:18px;
 }
