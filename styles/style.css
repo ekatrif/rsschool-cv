@@ -186,3 +186,55 @@ letter-spacing: 0.075em;
     background-color:#ED6A6D;
 }
 
+/* Language */
+.language {
+    margin-top:20px;
+}
+.language__title {
+    display:block;
+    position:relative;
+    text-align: right;
+}
+.language__title:after {
+    position:absolute;
+    display:block;
+    content:"";
+    bottom:0;
+    left:0;
+    width:100%;
+    border-bottom:1px solid #343434;
+}
+.language__items {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width:100%;
+    margin-top:20px;
+}
+.language__item {
+    width:50%;
+}
+.language__item:nth-child(2n) {
+    text-align:right;
+}
+.language__item:nth-child(n+3) {
+    padding-top:15px;
+}
+.language-item__name {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #343434;
+}
+.language-item__level {
+    padding-top:5px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 1.5;
+    color: rgba(52, 52, 52, 0.5);
+}
