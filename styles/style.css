@@ -25,6 +25,15 @@ h2 {
     color: #343434;
 
 }
+a {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;  
+    color: #343434;
+    text-decoration:none;
+}
 .wrapper {
     max-width:800px;
     margin:0 auto;
@@ -70,7 +79,7 @@ transition: color 0.3s linear;
 
 /* Sidebar */
 .sidebar {   
-    width: 400px;
+    width: 500px;
 }
 
 /* About me */
@@ -398,4 +407,59 @@ letter-spacing: 0.075em;
     font-size: 12px;
     line-height: 1.4;    
     color: #343434;    
+}
+
+/* Experience */
+.experience {
+    margin-top:20px;
+}
+.experience__title {
+    display:block;
+    position:relative;
+    text-align: left;
+}
+.experience__title::after {
+    position:absolute;
+    display:block;
+    content:"";
+    bottom:0;
+    left:0;
+    width:100%;
+    border-bottom:1px solid #343434;
+}
+.experience__list {
+    margin-top:14px;
+    display:flex;
+    flex-direction: column;
+}
+.experience__item:nth-child(n+2) {
+    padding-top:10px;
+}
+.experience-item__date {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;
+    color: rgba(52, 52, 52, 0.5);    
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    margin-bottom:5px;
+}
+.experience-item__title {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #000000;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.experience-item__description {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #343434;
+    transform: matrix(1, 0, 0, 1, 0, 0);
 }
