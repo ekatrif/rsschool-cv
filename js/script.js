@@ -3,7 +3,6 @@ function toggleHiddenClass() {
     codeExamples.addEventListener("click",function(e) {
         if (e.target.classList.contains("code-item__title")) {
             let code=e.target.parentElement.querySelector(".code-item__code");
-            console.log(code);
             code.classList.toggle("hidden");
         }
     })

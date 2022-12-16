@@ -507,3 +507,39 @@ letter-spacing: 0.075em;
 .code-item__title {
     cursor:pointer;
 }
+
+/* Footer */
+.footer {
+    display:flex;
+    flex-direction: row;
+    margin-top:20px;
+    justify-content:space-between;
+    align-items:center;
+    background-color:#FFBFBF;
+    padding:10px;
+}
+.footer div:nth-child(n+2) {
+    padding-left: 40px;
+}
+.footer__copyright {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+.footer-link a {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.footer__rs-logo {
+    width:100px;
+}
