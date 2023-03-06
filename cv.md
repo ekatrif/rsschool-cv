@@ -120,14 +120,15 @@ Honed my practice on simulators:
 - https://codepip.com/
 - https://www.codewars.com/users/ekatrif
 
-Made 6 pet projects:
+Made pet projects:
 
-1. Vote for the film of the week - https://github.com/ekatrif/films-rating
-2. Speaker time control - https://github.com/ekatrif/spiker-time-control
-3. CV page - https://github.com/ekatrif/Pet-project
-4. Product page - https://github.com/ekatrif/funbox-test-task
-5. Online store page with a shopping cart - https://github.com/ekatrif/online-shop-prototype
-6. Online store prototype - https://github.com/ekatrif/1146-Edu-project
+1. Vote for the film of the week - https://github.com/ekatrif/Momentum
+2. Vote for the film of the week - https://github.com/ekatrif/films-rating
+3. Speaker time control - https://github.com/ekatrif/spiker-time-control
+4. CV page - https://github.com/ekatrif/Pet-project
+5. Product page - https://github.com/ekatrif/funbox-test-task
+6. Online store page with a shopping cart - https://github.com/ekatrif/online-shop-prototype
+7. Online store prototype - https://github.com/ekatrif/1146-Edu-project
 
 ### **2010 - 2021: Web developer**, freelance.
 
@@ -155,11 +156,11 @@ Made 6 pet projects:
 
 **2021 Frontend developer**, Training center "Professional", Frontend development.
 
-**2021-2022** RollingScopes School stage 0, have a certificate.
+**2022-2023** RollingScopes School stage 0, have a certificate.
 
 ![Certificate of completition](./images/rs-school-stage0.jpg)
 
-**2022** RollingScopes School stage 1, in the process.
+**2023** RollingScopes School stage 1, in the process.
 
 ---
 
