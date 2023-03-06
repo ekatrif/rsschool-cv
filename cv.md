@@ -122,7 +122,7 @@ Honed my practice on simulators:
 
 Made pet projects:
 
-1. Vote for the film of the week - https://github.com/ekatrif/Momentum
+1. Web-application Momentum - https://github.com/ekatrif/Momentum
 2. Vote for the film of the week - https://github.com/ekatrif/films-rating
 3. Speaker time control - https://github.com/ekatrif/spiker-time-control
 4. CV page - https://github.com/ekatrif/Pet-project
