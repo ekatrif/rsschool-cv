@@ -2,7 +2,7 @@
 
 ## Frontend developer
 
-![Ekaterina Trifonova](./resume_photo.jpg)
+![Ekaterina Trifonova](./images/resume_photo.jpg)
 
 ---
 
@@ -32,12 +32,12 @@ At the moment, my favorite development tool is Vue.js, I like how the framework 
 - SASS
 - SCSS
 - Git
+- Webpack
+- Gulp
 - BEM
 - jQuery
 - Bootstrap
 - Axios
-- Webpack
-- Gulp
 
 ---
 
