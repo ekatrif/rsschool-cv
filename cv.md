@@ -155,7 +155,11 @@ Made 6 pet projects:
 
 **2021 Frontend developer**, Training center "Professional", Frontend development.
 
-**2022** RollingScopes Schools, in the process.
+**2021-2022** RollingScopes School stage 0, have a certificate.
+
+![Certificate of completition](./images/rs-school-stage0.jpg)
+
+**2022** RollingScopes School stage 1, in the process.
 
 ---
 
