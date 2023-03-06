@@ -53,163 +53,56 @@ At the moment, my favorite development tool is Vue.js, I like how the framework 
 
 ## Сode examples
 
-### Vue.js Single File Component
+### Function from Momentum task of the stage 0
 
 ```
-<template>
-  <div class="film-card">
-    <div class="film-card__poster">
-      <img v-bind:src="image" v-bind:alt="titleRus" />
-    </div>
-    <div class="film-card__info info">
-      <div class="info__original-title">{{ titleOriginal }} {{ ageRating }}+</div>
-      <div class="info__about-title">О фильме</div>
-      <div class="info__about-content about">
-        <div class="about__name">Год производства</div>
-        <div class="about__value">{{ year }}</div>
-        <div class="about__name">Слоган</div>
-        <div class="about__value">«{{ slogan }}»</div>
-        <div class="about__name">Страна</div>
-        <div class="about__value">
-          <ul>
-            <li v-for="item in country" v-bind:key="item.title">{{ item }}</li>
-          </ul>
-        </div>
-        <div class="about__name">Жанр</div>
-        <div class="about__value">
-          <ul>
-            <li v-for="item in genre" v-bind:key="item.title">{{ item }}</li>
-          </ul>
-        </div>
-        <div class="about__name">Возраст</div>
-        <div class="about__value">
-          <span class="age">{{ ageRating }}+</span>
-        </div>
-        <div class="about__name">Звуковые дорожки</div>
-        <div class="about__value">
-          <ul>
-            <li v-for="item in voiceOver" v-bind:key="item.title">{{ item }}</li>
-          </ul>
-        </div>
-        <div class="about__name">Субтитры</div>
-        <div class="about__value">
-          <ul>
-            <li v-for="item in subtitles" v-bind:key="item.title">{{ item }}</li>
-          </ul>
-        </div>
-        <div class="about__name">Время</div>
-        <div class="about__value">{{ time }} мин. {{ time | formatTime }}</div>
-      </div>
-    </div>
-  </div>
-</template>
+function playAudio() {
+    const play = document.querySelector(".play");
+    if (!isPlaying) {
+    isPlaying = true;
+    audio.src = playList[currentTrack].src;
+    currentTrackName = playList[currentTrack].title;
+    const currentTrackContainer = document.querySelector(".player__track-name");
+    currentTrackContainer.textContent = currentTrackName;
+    audio.currentTime = currentTime;
+    audio.play();
+    audio.addEventListener("loadeddata", showTrackDuration);
+    play.classList.add("pause");
+    audio.addEventListener("ended",nextTrack);
+    const items = document.querySelectorAll(".play-pro-item");
+    [...items].forEach(el=> {
+        if (el.innerText === currentTrackName) {
+            el.classList.add("item-active");
+            el.classList.toggle("item-pause");
+        } else {
+            el.classList.remove("item-active");
+            el.classList.remove("item-pause");
+        }
 
-<script>
-export default {
-  name: "FilmCard",
-
-  props: ["id", "titleRus", "titleOriginal", "year", "ageRating", "genre", "country", "time", "voiceOver", "subtitles", "slogan", "image"],
-  filters: {
-    formatTime: function (timeMins) {
-      if (timeMins < 60) {
-        return false;
-      } else {
-        let hours = Math.floor(timeMins / 60);
-        let mins = timeMins - hours * 60;
-        return `/ ${hours}ч. ${mins}мин.`;
-      }
-    },
-  },
-  components: {},
-};
-</script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-.film-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 20px;
-  margin-bottom: 20px;
+    });
+    } else {
+        pauseAudio();
+        
+    }
 }
-.film-card__poster {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  max-width: 600px;
-  height: auto;
-}
-.film-card__poster img {
-  width: 100%;
-  height: auto;
-}
-.film-card__info {
-  height: 100%;
-}
-.info__original-title {
-  font-size: 120%;
-  font-weight: 400;
-}
-.info__about-title {
-  margin-top: 25px;
-  margin-bottom: 15px;
-  font-size: 120%;
-  font-weight: 500;
-}
-.info__about-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  gap: 20px;
-  font-size: 90%;
-  line-height: 2;
-}
-.about__name {
-  color: rgba(21, 25, 29, 0.7);
-}
-ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-ul li {
-  display: inline;
-}
-ul li:not(:last-child)::after {
-  content: ", ";
-}
-.age {
-  width: auto;
-  padding: 3px;
-  border: 2px solid rgba(21, 25, 29);
-  border-radius: 3px;
-  font-weight: 600;
-}
-</style>
 ```
 
 ### CodeWars kata
 
 ```
-    <script>
-      function takeWhile(arr, func) {
-        const outputArray = [];
-        for (element of arr) {
-          if (func(element)) {
-            outputArray.push(element);
-            } else {
-            console.log(outputArray);
-            return outputArray;
-          }
-        }
-        return outputArray;
-      }
-      var seq = [2, 4, 6, 8, 1, 2, 5, 4, 3, 2];
-      function isEven(num) {
-        return num % 2 === 0;
-      }
-      takeWhile(seq, isEven); // -> [2,4,6,8]
-    </script>
+function rgb(r, g, b){
+  let result = "";
+  [...arguments].forEach(function(color) {
+    color=color<0 ? 0 : color;
+    color=color>255 ? 255 : color;
+    let hexString = color.toString(16);
+    if (hexString.length===1) {
+      hexString ="0" + hexString;
+    }
+    result +=hexString;
+  }) 
+  return result.toUpperCase();
+}
 ```
 
 ---
